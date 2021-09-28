@@ -19,7 +19,7 @@ noremap K 5k
 inoremap jk <Esc>
 noremap L $
 noremap H 0
-noremap erc :e $MYVIMRC 
+noremap erc :e $MYVIMRC<CR>
 
 " Run a script 
 noremap rs :w<CR>:! python3 % <CR>
@@ -75,6 +75,7 @@ set mouse=a
 set clipboard=unnamed
 set foldmethod=indent
 set laststatus=2
+set scrolloff=5
 " set hidden 
 set autochdir
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
